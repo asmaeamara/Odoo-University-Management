@@ -4,6 +4,7 @@ from odoo import models, fields, api
 
 class UniversityProfessor(models.Model):
     _name = 'university.professor'
+    _description = "Professor entity"
 
     # professor's properties
     f_name = fields.Char('First name')

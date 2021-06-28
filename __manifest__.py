@@ -26,7 +26,10 @@
     'data': [
         # add access right values
         'security/ir.model.access.csv',
+        'views/department_views.xml',
+        'views/professor_views.xml',
         'views/student_views.xml',
+        'views/subject_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
