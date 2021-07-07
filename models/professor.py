@@ -16,3 +16,11 @@ class UniversityProfessor(models.Model):
     start_date = fields.Date('Start date')
     email = fields.Char('Email')
     phone = fields.Char('Phone')
+
+    # professor's relationships
+    department_id = fields.Many2one(comodel_name='university.department')
+    subject_id = fields.Many2one(comodel_name='university.subject')
+    classroom_ids = fields.Many2many(comodel_name='university.classroom',
+                                     relation='professor_classroom_rel',
+                                     column1='f_name',
+                                     column2='classroom_name')

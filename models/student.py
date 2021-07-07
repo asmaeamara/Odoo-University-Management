@@ -16,3 +16,8 @@ class UniversityStudent(models.Model):
     registration_date = fields.Date('Registration date')
     email = fields.Char('Email')
     phone = fields.Char('Phone')
+
+    # subject's relationships
+    subjects_ids = fields.One2many(comodel_name='university.subject', inverse_name='student_id')
+    department_id = fields.Many2one(comodel_name='university.department')
+    classroom_id = fields.Many2one(comodel_name='university.classroom')
