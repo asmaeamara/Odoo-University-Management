@@ -20,6 +20,8 @@
         <tree>
           <field name="subject_name"/>
           <field name="code"/>
+          <field name="department_id"/>
+          <field name="student_id"/>
         </tree>
       </field>
     </record>

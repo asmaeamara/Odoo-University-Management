@@ -34,6 +34,8 @@
           <field name="registration_date"/>
           <field name="email"/>
           <field name="phone"/>
+          <field name="department_id"/>
+          <field name="classroom_id"/>
         </tree>
       </field>
     </record>

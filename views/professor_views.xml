@@ -34,6 +34,8 @@
           <field name="start_date"/>
           <field name="email"/>
           <field name="phone"/>
+          <field name="department_id"/>
+          <field name="subject_id"/>
         </tree>
       </field>
     </record>
