@@ -20,6 +20,9 @@
         <tree>
           <field name="classroom_name"/>
           <field name="code"/>
+          <field name="num_prof"/>
+          <field name="num_sub"/>
+          <field name="num_stud"/>
         </tree>
       </field>
     </record>

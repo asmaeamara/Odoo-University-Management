@@ -20,3 +20,20 @@ class UniversityClassroom(models.Model):
                                    relation='classroom_subject_rel',
                                    column1='classroom_name',
                                    column2='subject_name')
+
+    # Computed fields
+    num_prof = fields.Integer(string='Number of professors', compute='comp_prof')
+    num_sub = fields.Integer(string='Number of subjects', compute='comp_sub')
+    num_stud = fields.Integer(string='Number of student', compute='comp_stu')
+
+    # Compute professors
+    def comp_prof(self):
+        self.num_prof = len(self.professor_ids)
+
+    # Compute subjects
+    def comp_sub(self):
+        self.num_sub = len(self.subject_ids)
+
+    # Compute students
+    def comp_stu(self):
+        self.num_stud = len(self.student_ids)

@@ -21,3 +21,14 @@ class UniversityStudent(models.Model):
     subjects_ids = fields.One2many(comodel_name='university.subject', inverse_name='student_id')
     department_id = fields.Many2one(comodel_name='university.department')
     classroom_id = fields.Many2one(comodel_name='university.classroom')
+
+    # Get student names
+    # Result : student window / [Math Info Classroom] Bouchaib Massioui
+    @api.multi
+    def name_get(self):
+        result = []
+        for student in self:
+            name = '['+ student.classroom_id.classroom_name + '] ' + student.f_name + ' ' +student.l_name
+            result.append((student.id, name))
+
+        return result
