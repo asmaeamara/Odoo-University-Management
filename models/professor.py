@@ -28,6 +28,7 @@ class UniversityProfessor(models.Model):
 
     # Get professor names
     # Result : professor window / [Math Informatique Department] Rachid SomeOne
+    # @api.multi decorator : @api.many is for multiple records, where you can loop through it etc. It will be the current , https://www.odoo.com/forum/help-1/difference-between-api-one-and-api-multi-in-api-odoo-openerp-68209#
     @api.multi
     def name_get(self):
         result = []
@@ -36,3 +37,11 @@ class UniversityProfessor(models.Model):
             result.append((professor.id, name))
 
         return result
+
+    # Constraints for `birthday` and `start_date`
+    # @api.one to trigger the constrains for each record
+    @api.one 
+    @api.constrains('birthday', 'start_date')
+    def check_date(self):
+        if self.birthday >= self.start_date:
+            raise ValueError('The Birthday must be inferior of registration date :( .')

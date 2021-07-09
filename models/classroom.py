@@ -37,3 +37,10 @@ class UniversityClassroom(models.Model):
     # Compute students
     def comp_stu(self):
         self.num_stud = len(self.student_ids)
+
+    # add constraints to nbr subject per classroom
+    # @api.onchange
+    @api.onchange('subject_ids')
+    def check_number_of_subject(self):
+        if len(self.subject_ids) > 3:
+            return{'warning': {'title': 'warning', 'message': 'The number of subjects must be less then 3 per classroom :('}}
