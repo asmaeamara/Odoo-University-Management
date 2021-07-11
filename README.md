@@ -26,19 +26,19 @@ The modul provides the administrators to manage the university esily.
 
 # Views type
 1. List view  
-![List view](readme/list_view.png)
+![List view](readme/list_view.PNG)
 
 2. Form view  
-![Form view](readme/form_view.png)
+![Form view](readme/form_view.PNG)
 
 
 # Implemented options
 1. Sequence of menu  
-![Navigation header](readme/navigation.png)
+![Navigation header](readme/navigation.PNG)
 2. Computed fields  
-![Computed fields](readme/computed_field.png)
+![Computed fields](readme/computed_field.PNG)
 3. Constraints  
-![Customizing the infos](readme/more_info.png)  
+![Customizing the infos](readme/more_info.PNG)  
 4. Customizing the navigator
 
 # Technical
