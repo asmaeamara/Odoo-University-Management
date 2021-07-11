@@ -1,7 +1,7 @@
 # About university modul
 University modul is an open source modul built with odoo V12 for University Management purpose.  
 The modul has be developed on Windows Os Environment using Pycharm.  
-![alt text](readme/app_icon.png)
+![University modul icon](readme/app_icon.png)
 
 # Run locally 
 * Create new Dir : `c:\\program files (x86)\\odoo 12.0\\server\\odoo\\myaddons`
@@ -22,23 +22,23 @@ The modul provides the administrators to manage the university esily.
 5. Classrooms
 
 # Modul Class Diagram
-![alt text](readme/university_management.png)
+![Class diagram](readme/university_management.png)
 
 # Views type
 1. List view  
-![alt text](readme/list_view.png)
+![List view](readme/list_view.png)
 
 2. Form view  
-![alt text](readme/form_view.png)
+![Form view](readme/form_view.png)
 
 
 # Implemented options
 1. Sequence of menu  
-![alt text](readme/navigation.png)
+![Navigation header](readme/navigation.png)
 2. Computed fields  
-![alt text](readme/computed_field.png)
+![Computed fields](readme/computed_field.png)
 3. Constraints  
-![alt text](readme/more_info.png)  
+![Customizing the infos](readme/more_info.png)  
 4. Customizing the navigator
 
 # Technical
